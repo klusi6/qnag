@@ -5,9 +5,11 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.HashMap;
+import java.util.Map;
+
 @Data
 @Entity
-@AllArgsConstructor
 @NoArgsConstructor
 public class Answer {
     @Id
@@ -18,4 +20,8 @@ public class Answer {
     @ManyToOne
     private Question question;
 
+    public Answer(String content, boolean isCorrect) {
+        this.content = content;
+        this.isCorrect = isCorrect;
+    }
 }

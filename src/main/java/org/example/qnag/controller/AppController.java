@@ -1,4 +1,4 @@
-package org.example.qnag;
+package org.example.qnag.controller;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
@@ -12,5 +12,7 @@ public class AppController {
     public ResponseEntity<String> index() {
         return ResponseEntity.ok("Welcome to QnAG!");
     }
+
+
 
 }
